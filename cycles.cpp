@@ -18,4 +18,17 @@ int main()
         std::cout << x << std::endl;
     }
     while ( x < 10);
+
+    // Странный for
+    for(int i = 0; i < 3; i ++, std::cout << "Hello world!" << std::endl); 
+
+    // Сумма цифр числа
+    int x;
+    std::cin >> x;
+    int sum;
+    while (x != 0){
+        sum += x % 10;
+        x /= 10;
+    }
+    std::cout << sum << std::endl;
 }
