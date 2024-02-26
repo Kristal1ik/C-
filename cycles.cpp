@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 int main()
 {
     for (int i = 0; i < 11; i++){
@@ -31,4 +32,14 @@ int main()
         x /= 10;
     }
     std::cout << sum << std::endl;
+
+    /*Для данного натурального числа n определите такое наименьшее целое k, что 2^k≥n. Например, при вводе числа 7 программа должна вывести 3.*/
+    int n;
+    std::cin >> n;;
+    for (int i = 1; i < n; i++){
+        if (pow(2, i) >= n) {
+            std::cout << i << std::endl;
+            break;
+    }
+}
 }
