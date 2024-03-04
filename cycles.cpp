@@ -42,4 +42,13 @@ int main()
             break;
     }
 }
+    // Произведение 
+        int a, b;
+    std::cin >> a;
+    std::cin >> b;
+    long ans = 0;
+    for (int i=0; i < b; i++){
+        ans = ans + a;}
+    std::cout << ans << std::endl;
+    return 0;
 }
